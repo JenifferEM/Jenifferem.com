@@ -87,7 +87,8 @@
 					<!-- Navigation buttons -->
 					<div class="nav-buttons">
 						<a href="#" class="btn-prev" data-target="prev-section"><i class="fa fa-angle-left"></i><span></span></a>
-						<a href="#" class="btn-next" data-target="next-section"><span>Meu Resumo</span><i class="fa fa-angle-right"></i></a>
+						<a href="#" class="btn-next" data-target="next-section"><span>Meu Resumo</span><i
+								class="fa fa-angle-right"></i></a>
 					</div>
 				</nav>
 
@@ -113,12 +114,22 @@
 									<div class="resume-box">
 										<h4 class="title-bar title-bar-black title-bar-hover"><strong>Sobre</strong> Mim</h4>
 										<div class="box-content">
-											<p class="lead">Eu sou <strong>Jeniffer Moreira</strong> - 34 anos Pirassununga.</p>
-											<p>Analista Fiscal com 10 anos de experiência em escritório contábil, <strong> com empresas do Lucro Real, Lucro Presumido e Simples Nacional.</strong> Faço trabalhos freelancers em  escrita criatira, gerenciamento de redes sociais e design <strong></strong>
-												</p>
+											<p class="lead">Eu sou <strong>Jeniffer Moreira</strong> - <span class="idade">34</span> anos
+												Pirassununga.</p>
+											<p>Analista Fiscal com 10 anos de experiência em escritório contábil, <strong> com empresas do
+													Lucro Real, Lucro Presumido e Simples Nacional.</strong> Faço trabalhos freelancers em escrita
+												criatira, gerenciamento de redes sociais e design <strong></strong>
+											</p>
 											<a href="#" class="btn btn-primary" data-target="slide" data-slide="4">Entre em contato</a>
 										</div>
 									</div>
+
+									<script>
+										(function () {
+											document.querySelector(".resume-box span.idade").innerHTML =
+												Math.abs((new Date(Date.now() - (new Date("10/12/1989")).getTime())).getUTCFullYear() - 1970);
+										}());
+									</script>
 
 									<!-- Services -->
 									<div class="resume-box">
@@ -130,7 +141,8 @@
 												</div>
 												<div class="service-content">
 													<h4 class="service-title"><strong>Gerenciamento de Redes Sociais</strong> </h4>
-													<span class="service-caption text-muted "><i>Gestão de redes sociais, Instagrans, Linkedin, Facebook, Threads entre outros</i></span>
+													<span class="service-caption text-muted "><i>Gestão de redes sociais, Instagrans, Linkedin,
+															Facebook, Threads entre outros</i></span>
 												</div>
 											</div>
 											<div class="single-service">
@@ -149,7 +161,8 @@
 												</div>
 												<div class="service-content">
 													<h4 class="service-title"><strong>Traduções Inglês/Português</strong></h4>
-													<span class="service-caption text-muted "><i>Traduções de peças, artigos, abstracts dp português/ingles e inglês/português
+													<span class="service-caption text-muted "><i>Traduções de peças, artigos, abstracts dp
+															português/ingles e inglês/português
 														</i></span>
 												</div>
 											</div>
@@ -191,7 +204,7 @@
 															murais</i></span>
 												</div>
 											</div>
-											
+
 											<div class="single-service">
 												<div class="service-icon icon icon-black icon-circle icon-filled">
 													<i class="flaticon-tie7"></i>
@@ -298,7 +311,8 @@
 
 									<!-- Educations & Jobs -->
 									<div class="resume-box">
-										<h4 class="title-bar title-bar-black title-bar-hover"><strong>Formação</strong> &amp; Capacitações</h4>
+										<h4 class="title-bar title-bar-black title-bar-hover"><strong>Formação</strong> &amp; Capacitações
+										</h4>
 										<div class="box-content">
 											<div class="timeline">
 												<!-- Single event -->
@@ -306,7 +320,7 @@
 													<div class="event-date">2023-2026 (cursando)</div>
 													<h4 class="event-name"><strong>Bacharelado</strong> Ciencias Contábeis</h4>
 													<div class="event-description ">Anhembi Morumbi</div>
-												</div>												
+												</div>
 												<!-- Single event -->
 												<div class="timeline-event te-black">
 													<div class="event-date">2023</div>
@@ -333,7 +347,7 @@
 														Lifelong Learning</h4>
 													<div class="event-description ">PUCRS</div>
 												</div>
-												
+
 												<!-- Single event -->
 												<div class="timeline-event te-black">
 													<div class="event-date">2006 - 2009</div>
@@ -408,7 +422,7 @@
 													<span class="icon icon-circle icon-sm icon icon-black"><i
 															class="flaticon-coffee-cup1"></i></span>
 													<h6 class="font-alt margin-bottom-0">Ukulele</h6>
-												</div>											
+												</div>
 												<!-- Icon Box -->
 												<div class="col-sm-4 icon-box text-center">
 													<span class="icon icon-circle icon-sm icon icon-black"><i
